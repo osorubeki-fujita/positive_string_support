@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Shu Fujita"]
   spec.email         = ["osorubeki.fujita@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
+  spec.summary       = "This gem provides useful methods for String class (built-in class of Ruby)."
   # spec.description   = %q{TODO: Write a longer description or delete this line.}
   spec.homepage      = "https://github.com/osorubeki-fujita/positive_string_support"
   spec.license = "MIT"
