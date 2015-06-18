@@ -12,6 +12,10 @@ module PositiveStringSupport::RegexpLibrary
       /([\(（〈\|【].+[】\|〉）\)])$/
     end
 
+    def regexp_for_parentheses_en
+      /([\(\<\|].+[\|\>\)])$/
+    end
+
     # quotation に対する正規表現
     # @return [Regexp]
     def regexp_for_quotation

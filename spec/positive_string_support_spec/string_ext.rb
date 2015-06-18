@@ -1,5 +1,5 @@
-describe PositiveStringSupport do
-  describe PositiveStringSupport::StringExt do
+describe ::PositiveStringSupport do
+  describe ::PositiveStringSupport::StringExt do
 
     describe "\#convert_meta_character_in_regexp" do
       it "converts meta character in string in order to use inregexp" do
@@ -39,5 +39,12 @@ describe PositiveStringSupport do
       end
     end
     
+  end
+  
+  describe ::PositiveStringSupport::RegexpLibrary do
+    regexp_ja = ::PositiveStringSupport::RegexpLibrary.regexp_for_parentheses_ja
+    it "has class method \'regexp_for_parentheses_ja\'." do
+      expect( regexp_ja ).to match( "東京メトロ丸ノ内線（中野坂上 - 方南町）" )
+    end
   end
 end
