@@ -9,11 +9,11 @@ module PositiveStringSupport::RegexpLibrary
     # 括弧に対する正規表現（日本語）
     # @return [Regexp]
     def regexp_for_parentheses_ja
-      /([\(（〈\|【].+[】\|〉）\)])$/
+      /([\(（〈\|【].+[】\|〉）\)])\Z/
     end
 
     def regexp_for_parentheses_en
-      /([\(\<\|].+[\|\>\)])$/
+      /([\(\<\|].+[\|\>\)])\Z/
     end
 
     # quotation に対する正規表現
